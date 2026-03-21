@@ -1,0 +1,9 @@
+,,,
+TABLA NORMALIZADO DE ENTIDAD-RELACION,,,
+,,,
+Entidad,Atributos,Relación,Conecta con...
+Jugador,"ID (PK), NickName, Email, Password, Fecha_Registro",1:N,Partida
+MiniJuego,"ID (PK), Nombre, Genero, Descripcion",1:N,Partida
+Partida,"ID (PK), FK_Jugador, FK_MiniJuego, Fecha, Puntaje, Duracion",N:1,Jugador y MiniJuego
+Logro,"ID (PK), Nombre, Estadistica_Requerida",1:N,Jugador_Logro
+Jugador_Logro,"FK_Jugador (PK), FK_Logro (PK), Fecha_Desbloqueo",N:1,Jugador y Logro
