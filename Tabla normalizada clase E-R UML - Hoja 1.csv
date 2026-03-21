@@ -1,0 +1,39 @@
+,,
+TABLA NORMALIZADA DE ARCADE TIME(CLASE E-R UML),,
+,,
+Clase,Atributos (Propiedades),Operaciones (Métodos Sugeridos)
+Jugador,"- id_jugador: int
+
+- nickname: string
+
+- email: string
+
+- fecha_registro: datetime","registrar()
+
+iniciarSesion()"
+MiniJuego,"- id_minijuego: int
+
+- nombre: string
+
+- genero: string","iniciarJuego()
+
+obtenerRanking()"
+Partida,"- id_partida: int
+
+- fecha_hora: datetime
+
+- puntaje: int
+
+- duracion_seg: int","guardarResultado()
+
+CalcularPuntaje()"
+Logro,"- id_logro: int
+
+- nombre: string
+
+- estadistica: string",verificarRequisitos()
+JugadorLogro,"- id_jugador: int
+
+- id_logro: int
+
+- fecha: datetime",asignarLogro()
