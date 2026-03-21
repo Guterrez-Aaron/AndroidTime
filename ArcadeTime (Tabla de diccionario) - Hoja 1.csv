@@ -1,0 +1,30 @@
+Tabla de Dicionario de la base de datos para Arcade Time,,
+,,
+,,
+Jugador,TIPO,RESTRINCIONES
+ID,Int,Primary key(Not NULL)
+Fecha,datatime,Not NULL
+Email,Varchar,100
+Contraseña,varchar,255
+Nombre,string,Unique Not NULL
+ID_Jugador,int,Foreign Key(Not NULL)
+,,
+Partida,TIPO,RESTRICIONES
+Duracion,datatime,NULL
+Puntaje,string,Not NULL
+Fecha,datatime,Not NULL
+ID_Partida,int,Not NULL
+,,
+Minijuegos,TIPO,RESTRICIONES
+ID,Int,Primary Key (Not Null)
+Genero,Varchar,Not NULL
+Duracion,String,NULL
+Descripcion,Campo,Not NULL
+ID_Minijuego,int,Foreign Key(Not NULL)
+,,
+Logros,TIPO,RESTRICIONES
+ID,Int,Primary Key(Not NULL)
+Nombre,Varchar, Not NULL
+Tiempo,Datatime,NULL
+Estadisticas,String,NULL
+ID_logro,Int,Foreign Key(Not NULL)
